@@ -42,7 +42,7 @@ body {
         justify-content: center;
         align-items: center;
         transition: all 0.5s ease;
-        z-index: 10;
+        z-index: 110;
 
         & .img1 {
             position: absolute;
@@ -142,7 +142,7 @@ body {
             .player-container {
                 display: flex;
                 height: 60%;
-                transform: translate(-100%, 0%);
+                transform: translate(-100%, -10%);
                 justify-content: center;
                 align-items: center;
                 z-index: 11;
@@ -160,7 +160,7 @@ body {
             .sound-picker {
                 margin-left: -200%;
                 padding: 0px;
-                margin-top: 170%;
+                margin-top: 120%;
                 z-index: 10;
                 display: flex;
 

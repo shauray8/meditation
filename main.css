@@ -52,7 +52,7 @@ body .preloader {
           align-items: center;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  z-index: 10;
+  z-index: 110;
 }
 
 body .preloader .img1 {
@@ -168,8 +168,8 @@ body .app .player-container button:hover {
     display: -ms-flexbox;
     display: flex;
     height: 60%;
-    -webkit-transform: translate(-100%, 0%);
-            transform: translate(-100%, 0%);
+    -webkit-transform: translate(-100%, -10%);
+            transform: translate(-100%, -10%);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -184,7 +184,7 @@ body .app .player-container button:hover {
   body .app .sound-picker {
     margin-left: -200%;
     padding: 0px;
-    margin-top: 170%;
+    margin-top: 120%;
     z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
