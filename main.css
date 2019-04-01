@@ -32,7 +32,6 @@ body .header p {
 @media (max-width: 600px) {
   body .header p {
     font-size: 1.1em;
-    padding: 0 10%;
   }
 }
 
