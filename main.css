@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  font-family: corbel;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  body body {
+    overflow: visible;
+  }
+}
+
+body .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .header p {
+  font-size: 1.45em;
+  line-height: 35px;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  body .header p {
+    font-size: 1.1em;
+    padding: 0 10%;
+  }
+}
+
+body .preloader {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  background-color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+
+body .preloader .img1 {
+  position: absolute;
+  height: 400px;
+}
+
+body .preloader p {
+  position: relative;
+  top: 40%;
+  font-size: 1.7em;
+}
+
+@media (max-width: 600px) {
+  body .preloader p {
+    top: 45%;
+    font-size: 1.3em;
+  }
+}
+
+body .preloader-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body .app {
+  height: 100vh;
+  overflow: hidden;
+  margin-top: -90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .app .time-select,
+body .app .sound-picker,
+body .app .player-container {
+  height: 80%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .app .time-select button,
+body .app .sound-picker button,
+body .app .player-container button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body .app .time-select button:hover,
+body .app .sound-picker button:hover,
+body .app .player-container button:hover {
+  color: #000;
+  background: #fff;
+}
+
+@media (max-width: 600px) {
+  body .app .time-select,
+  body .app .sound-picker,
+  body .app .player-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .app .time-select {
+    margin-top: 50px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .app .sound-picker {
+    margin-left: -200%;
+    padding: 0px;
+    margin-top: 130%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .app .player-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60%;
+    -webkit-transform: translate(-100%, 0%);
+            transform: translate(-100%, 0%);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 11;
+  }
+}
+
+@media (max-width: 400px) {
+  body .app .sound-picker {
+    margin-left: -200%;
+    padding: 0px;
+    margin-top: 170%;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+body .app .sound-picker button {
+  border: none;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+body .app .sound-picker button img {
+  height: 100%;
+}
+
+body .app .sound-picker button:nth-child(1) {
+  background: #4972a1;
+}
+
+body .app .sound-picker button:nth-child(2) {
+  background: #a14f49;
+}
+
+body .app .player-container {
+  position: relative;
+}
+
+body .app .player-container svg {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+          transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+
+body .app .player-container .time-display {
+  position: absolute;
+  bottom: 0%;
+  color: white;
+  font-size: 50px;
+}
+
+body .app video {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -10;
+}
+
+@media (max-width: 600px) {
+  body .app video {
+    height: 100%;
+    width: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
