@@ -229,7 +229,7 @@ body .app .player-container svg {
 
 body .app .player-container .time-display {
   position: absolute;
-  bottom: 0%;
+  bottom: -5%;
   color: white;
   font-size: 50px;
 }
