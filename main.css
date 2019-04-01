@@ -184,7 +184,7 @@ body .app .player-container button:hover {
   body .app .sound-picker {
     margin-left: -200%;
     padding: 0px;
-    margin-top: 120%;
+    margin-top: 100%;
     z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
