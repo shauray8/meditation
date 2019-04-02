@@ -67,7 +67,7 @@ body .preloader p {
 
 @media (max-width: 600px) {
   body .preloader p {
-    top: 45%;
+    top: 10%;
     font-size: 1.3em;
   }
 }
@@ -124,7 +124,7 @@ body .app .player-container button {
   border: 2px solid white;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 18px;
   z-index: 12;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
